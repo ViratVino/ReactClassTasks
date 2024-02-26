@@ -1,0 +1,45 @@
+/*Heading Style */
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Strike&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #b56464;
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 200;
+}
+
+.welcome-card {
+  background-color: #fff;
+  padding: 2em;
+  margin: 3em;
+  border-radius: 1em;
+}
+
+.welcome-card > h4 {
+  font-size: 1.75em;
+  font-weight: 100;
+}
+
+.welcome-card p {
+  color: gray;
+  padding-top: 1em;
+  font-family: "Protest Revolution", sans-serif;
+}
+
+.welcome-card > .btn {
+  margin-top: 1em;
+  background-color: #b56464;
+  color: white;
+  padding: 1em;
+  border: none;
+  border-radius: 0.3em;
+}
+
+.welcome-card .demo {
+  color: red;
+}/*# sourceMappingURL=main-back.css.map */

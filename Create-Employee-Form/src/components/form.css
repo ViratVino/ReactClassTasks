@@ -1,0 +1,263 @@
+:root{
+  --baseColor:#eb5624;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+
+
+  .parentComponent{
+    width: 100%;
+    height: 100vh;
+    background: rgba(95, 92, 92,0.5);
+    
+    position: relative;
+  
+
+  }
+
+
+
+
+  .form{
+   
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-60%);
+ 
+
+   
+  }
+
+
+  .employee-form{
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    
+
+  }
+
+
+  .fd{
+    display: flex;
+    gap: 1.25em;
+    margin-bottom: 1.25em;
+  
+  }
+
+  .wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+
+ 
+
+
+  .header{
+    flex-basis: 80%;
+    margin-top: 70px;
+  } 
+
+
+  .employee-container{
+
+    margin-top: 17%;
+    height: 25em;
+    width: 37.5em;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: WHITE;
+  
+ 
+
+  
+
+  }
+
+
+  h2{
+    color: var(--baseColor);
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eb5624;
+    /* text-align: center; */
+    
+
+  }
+
+
+
+  #close-btn{
+    float: right;
+    padding: 8px;
+    position: relative;
+    top: -6px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: rgba(22, 20, 20,0.8);
+
+  }
+
+  
+  #close-btn:hover{
+    transition-duration: 1s;
+    border: 1px solid var(--baseColor);
+  }
+
+
+
+ #createEmployeebtn {
+    background-color:var(--baseColor);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 60%;
+    margin:20px auto 0px auto ;
+    
+  }
+
+  #createEmployeebtn:hover{
+    background-color:#ac360f;
+    color: rgb(255, 255, 255);
+    transition-duration: 2s;
+ 
+  }
+ 
+
+  .craete{
+    color: #4a4a4a;
+font-size:60px;
+font-weight:bolder;
+font-style:revert-layer;
+font-weight:700;
+letter-spacing:1.6px;
+padding:10px 0px;
+padding-bottom:0px;
+  }
+
+
+.employee{
+  color:#1648c6;
+font-size:60px;
+font-weight:bolder;
+font-style:revert-layer;
+font-weight:700;
+letter-spacing:1.6px;
+
+}
+
+
+
+
+
+
+
+
+/* styles.css */
+
+/* Input Component */
+input ,select{
+ width: 100%,; 
+ padding: 0.938em;  
+ border: 2px solid #e0e0e0;
+border-radius: 5px;
+font-size: 15px;
+transition: border-color 0.2s, color 0.2s, font-size 0.2s, font-weight 0.2s;
+outline: none;
+border-color: #e0e0e0;
+color:  rgb(22, 20, 20);
+font-weight: normal;
+
+}
+
+input:focus{
+  /* border-color: #cc5500; */
+  color: rgb(22, 20, 20);
+  font-weight: 500;
+  outline: none;
+ 
+}
+
+/* Label Component */
+label {
+  padding: 0.875em;
+  pointer-events: none;
+   margin-top: 2px;
+  margin-left: 2px;
+  position: absolute;
+  height: 10px;
+  left: 0;
+  top: 0;
+  font-weight: 600;
+  transition: 0.2s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  background-color: #ffffff;
+  color: rgba(22, 20, 20,0.6);
+ 
+
+
+}
+
+input:focus+label,select:focus+label{
+  color: #ed940d;
+  top: -23px;
+  transform: scale(0.8);
+  left: -10px;
+ 
+  
+
+}
+.focus+label,.focus>label{
+  color: #ed940d;
+  top: -23px;
+  transform: scale(0.8);
+  left: -10px;
+ 
+}
+
+
+@media (max-width: 768px) {
+  .employee-container {
+    margin-top: 5%;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .craete,
+  .employee {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+

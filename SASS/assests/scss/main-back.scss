@@ -1,0 +1,77 @@
+//  Heading Style
+/*Heading Style */
+
+// .Heading-Style{
+//     color: yellow;
+//     font-size: 36px;
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Strike&display=swap');
+
+// :root{
+//     --app-color:#b56464;
+//   }
+
+
+  $app-color:#b56464;
+  $font-fam: "Protest Revolution", sans-serif;
+  $mainFont: "Protest Strike", sans-serif;
+  $mapColor:(
+    "Primary":red,
+    "secondary":yellow 
+    );
+  
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $app-color;
+   
+    font-family: $mainFont;
+    font-weight: 200;
+
+}
+
+
+
+.welcome-card{
+    background-color: #fff;
+    padding: 2em;
+    margin: 3em;
+    border-radius: 1em;
+    
+}
+
+.welcome-card>h4{
+    font-size: 1.75em;
+    font-weight: 100;
+}
+
+.welcome-card p{
+    color: gray;
+    padding-top: 1em;
+    font-family: $font-fam;
+}
+
+.welcome-card > .btn{
+    margin-top: 1em;
+    background-color: $app-color;
+    color: white;
+    // color: map-get($map: $mapColor, $key:"Primary" );
+    // color: map-get( $mapColor,"Primary" );
+    padding: 1em;
+    border: none;
+    border-radius: 0.3em;
+    $app-color:red !global;  
+
+}
+
+.welcome-card  .demo{
+    color: $app-color;
+}

@@ -1,0 +1,106 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  /* background-color: aqua; */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background: url("https://www.istockphoto.com/en/photo/comment-box-coding-icon-3d-render-concept-for-mobile-computer-html-gm1424809144-469442081?phrase=code%20coding"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+}
+
+/* .tasks {
+  margin-top: 20px;
+} */
+
+/* .task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+} */
+
+
+.Headings{
+  margin-bottom: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 2px solid black;
+}
+
+.task-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item:hover {
+  transform: scale(1.1);
+}
+
+
+.task-info {
+  flex-grow: 1;
+  /* color: red; */
+}
+
+.task-status {
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.task-item.Completed {
+  background-color: #d4edda;
+}
+
+.task-item.Pending {
+  background-color: #f8d7da;
+  /* color: red; */
+}
+
+.task-item.Pending > .task-info{
+  color: red;
+}
+
+
+
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-top: 40px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}

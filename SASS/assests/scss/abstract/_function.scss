@@ -1,0 +1,4 @@
+@use "../abstract/variable/color"as *;
+@function project-color($varient){
+    @return map-get($theme-color,$varient );
+}

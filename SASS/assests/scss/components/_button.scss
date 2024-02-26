@@ -1,0 +1,19 @@
+@use "../abstract/mixin";
+
+.btn{
+   @include mixin.btn;
+
+   &-defaultButton{
+    @include mixin.btn(#111)
+   }
+   &-successButton{
+    background-color: green;
+   }
+   &-dangerButton{
+    background-color: red;
+   }
+   &-instructButton{
+    background-color: rgb(155, 155, 33);
+   }
+
+}

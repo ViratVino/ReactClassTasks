@@ -1,0 +1,74 @@
+//importing variables
+// @use "../abstract/variable/color" as c;
+// @use "../abstract/variable/fonts" as f;
+
+
+@use "../abstract/variable/forward" as *;
+@use "../abstract/function" as func;
+
+
+body{
+    // background-color:map-get($map: $theme-color, $key:"primary" );
+    background-color:func.project-color("accent");
+
+   
+    font-family: $mainFont;
+    font-weight: 200;
+    // background-image: url(https#{$image}jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+}
+
+$mapColor:(
+    "Primary":red,
+    "secondary":yellow 
+    );
+$image:"://cdn.pixabay.com/photo/2019/12/28/14/29/tajmahal-4724799_640.";
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.welcome-card{
+    background-color: #fff;
+    padding: 2em;
+    margin: 3em;
+    border-radius: 1em;
+    &--head{
+        font-size: 1.75em;
+    font-weight: 100;
+    }
+    &--desc{
+        color: gray;
+        padding-top: 1em;
+        font-family: $font-fam;
+    }
+    &--btn{
+        margin-top: 1em;
+        background-color:map-get($map: $theme-color, $key:"primary" );
+        color: white;
+        // color: map-get($map: $mapColor, $key:"Primary" );
+        // color: map-get( $mapColor,"Primary" );
+        padding: 1em;
+        border: none;
+        border-radius: 0.3em;
+        $app-color:red !global; 
+    }
+
+    &--demo{
+        color:map-get($map: $theme-color, $key:"primary" );
+    }
+    
+}

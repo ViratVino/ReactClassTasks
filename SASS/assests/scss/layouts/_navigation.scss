@@ -1,0 +1,23 @@
+//Navigation
+.header{
+    display: flex;
+    padding: 40px;
+   justify-content: space-between;
+
+  &-list{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  &.active{
+   color: #111;
+    }
+   }
+
+
+   &--brand{
+    font-size: 1.5em;
+    text-decoration: none;
+   }
+
+}
+//end Navigation
